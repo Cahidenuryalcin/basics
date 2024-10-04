@@ -28,3 +28,4 @@ C:\Users\User\OneDrive\Masaüstü\aspnetcore_dersleri\basics\obj\Debug\net7.0\re
 C:\Users\User\OneDrive\Masaüstü\aspnetcore_dersleri\basics\obj\Debug\net7.0\basics.pdb
 C:\Users\User\OneDrive\Masaüstü\aspnetcore_dersleri\basics\obj\Debug\net7.0\basics.genruntimeconfig.cache
 C:\Users\User\OneDrive\Masaüstü\aspnetcore_dersleri\basics\obj\Debug\net7.0\ref\basics.dll
+C:\Users\User\OneDrive\Masaüstü\aspnetcore_dersleri\basics\obj\Debug\net7.0\basics.sourcelink.json
