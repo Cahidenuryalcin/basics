@@ -16,6 +16,7 @@ public class CourseController: Controller{
         kurs.Id =1;
         kurs.Title= "Aspnet core";
         kurs.Description= "Yeni basladim guzel gibi";
+        kurs.Image="1.jpg";
         return View(kurs);
         
     }
