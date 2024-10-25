@@ -14,7 +14,28 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseStaticFiles();
+
+app.UseStaticFiles();  
+/* statik dosyaların default olarak ayarlanmış olan klasörü (wwwroot)
+kullanırken 
+src="~/wroot_alindaki_image_klasör_adi/......
+
+wwroot'un haricinde bir klasör için
+kaynak  
+https://learn.microsoft.com/en-us/aspnet/core/fundamentals/static-files?view=aspnetcore-8.0
+
+app.UseStaticFiles(new StaticfileOptions
+{
+    FileProvider = new PhysicalFileProvider(
+        Path.Combine(builder.Enviroment.ContentRootPath, "MyStaticFiles")),
+    RequestPath= "/StaticFiles"
+}); 
+*/
+
+//ulaşırken de 
+/*
+<img src="~/StaticFiles/images/red-rose.jpg" class="img" alt="A red rose" />
+*/
 
 app.UseRouting();
 
