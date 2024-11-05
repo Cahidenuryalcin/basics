@@ -7,10 +7,23 @@
         </div>
         <div class="col-md-9">
             <div class="card-body">
-                 <h5 class="card-title">@Model.Title</h5>
-            <p class="card-text">@Model.Description</p>
+                <a href="/course/details/@Model.Id">
+                    <h5 class="card-title">@Model.Title</h5>
+                </a>
+                <p class="card-text">@Model.Description</p>
             </div>
-           
+
         </div>
     </div>
 </div>
+
+<!--- 
+TAG HELPER
+
+href="/course/details/@Model.Id" 
+
+YERİNE
+
+asp-controller="Course" asp-action="Details asp-route-id="@Model.Id"
+
+-->

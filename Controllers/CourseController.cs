@@ -25,6 +25,16 @@ public class CourseController: Controller{
     //     return View(); // view ile kullanildiginda ayni isimde dosyayi arar
     // }
 
+
+public IActionResult Details(){
+        var kurs= new Course();
+        kurs.Id =1;
+        kurs.Title= "Aspnet core";
+        kurs.Description= "Yeni basladim guzel gibi";
+        kurs.Image="1.jpg";
+        return View(kurs);
+        
+    }
     //course list
     public IActionResult List(){
         var kurslar= new List<Course>(){
