@@ -37,11 +37,13 @@ public IActionResult Details(){
     }
     //course list
     public IActionResult List(){
-        var kurslar= new List<Course>(){
-            new Course(){Id=1,Title="aspnet kursu", Description="guzel bir kurs", Image="1.jpg"},
-            new Course(){Id=2,Title="pyhton kursu", Description="iyi bir kurs", Image="2.jpg"},
-            new Course(){Id=3,Title="javascript kursu", Description=" harika bir kurs", Image="3.jpg"},
-        };
-        return View("CourseList", kurslar); // farkli isimde değer gönderilmek istenilirse
+        // var kurslar= new List<Course>(){
+        //     new Course(){Id=1,Title="aspnet kursu", Description="guzel bir kurs", Image="1.jpg"},
+        //     new Course(){Id=2,Title="pyhton kursu", Description="iyi bir kurs", Image="2.jpg"},
+        //     new Course(){Id=3,Title="javascript kursu", Description=" harika bir kurs", Image="3.jpg"},
+        // };
+        // return View("CourseList", kurslar); // farkli isimde değer gönderilmek istenilirse
+        
+         return View("CourseList", Repository.Courses); 
     }
 }
